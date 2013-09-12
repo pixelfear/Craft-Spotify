@@ -1,0 +1,9 @@
+.spotify-response.loading {
+	background: url(../img/loader.gif) 0 100% no-repeat;
+	height: 24px;
+}
+.spotify-response p {
+	padding: 3px 0 0 0;
+	color: #999;
+	font-size: 11px;
+}

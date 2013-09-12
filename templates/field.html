@@ -1,0 +1,14 @@
+{% includeCssResource "spotify/css/spotify.css" %}
+
+<div class="spotify-field">
+	<input type="text" name="{{ name }}" value="{{ value }}" class="text fullwidth spotify-input" />
+	<div class="spotify-response"></div>
+</div>
+
+{% includeJsResource "spotify/js/spotify.js" %}
+{% set spotifyJs %}
+	(function(){
+		$(".spotify-input").spotifyField();
+	})();
+{% endset %}
+{% includeJs spotifyJs %}
